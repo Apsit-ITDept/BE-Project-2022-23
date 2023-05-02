@@ -1,4 +1,4 @@
-# BE-Project-2022-23
+# 14 Developing Real time and Secure Attendance Management System using Blockchain and ML
 
 The project aims to provide a solution to the attendance management problem by implementing a facial recognition based attendance monitoring system that stores the attendance records over a blockchain network.
 ## Deployment
