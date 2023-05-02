@@ -40,5 +40,5 @@ To run the project on a local host, run the following command:
 
 - [@Abdul Samad](https://github.com/Sam-822)
 - [@SinduraDasi](https://github.com/sinduraDasi)
-- [@EktaGujar](https://github.com/ektaG)
+- [@EktaGujar](https://github.com/ekta1000)
 
