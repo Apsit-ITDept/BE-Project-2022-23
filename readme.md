@@ -38,7 +38,7 @@ To run the project on a local host, run the following command:
 
 ## Authors
 
-- [@Abdul Samad](https://github.com/Sam-822)
-- [@SinduraDasi](https://github.com/sinduraDasi)
-- [@EktaGujar](https://github.com/ekta1000)
+- [Abdul Samad](https://github.com/Sam-822)
+- [SinduraDasi](https://github.com/sinduraDasi)
+- [EktaGujar](https://github.com/ekta1000)
 
