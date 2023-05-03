@@ -1,2 +1,2 @@
-# BE-Project-2022-23
-Upload all project related files here
+Exercise posture monitoring, detection and correction system.# Fit-N-Right
+# Fitness-App
