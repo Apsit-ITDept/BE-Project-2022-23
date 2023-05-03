@@ -10,10 +10,6 @@
 
 In our designed Course recommendation system we have fitted 2 models using KNN and Cosine Similarity" which aims to recommend online courses to users based on their interests and previous course history. It uses K-Nearest Neighbors (KNN) and Cosine Similarity algorithms to generate recommendations. The system considers factors such as course category, level, price, and ratings to provide personalized course recommendations. At first, the user's initial interest (course category) is taken to provide recommendations, and then after login, the user will get recommendations based on the previously selected category and based on the ratings given. We have built it using ReactJS for the UI and Python ( Machine Learning) for the model building and NodeJS, PostreSQL, JWT.
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Installation
 To run this project on your local machine, follow these steps:
 
