@@ -6,21 +6,9 @@ Mayuri Patil(19104012) <br>
 Abhijeetkumar Mishra(19104019) <br>
 
 
-## Technologies Used
-The main technologies used in the system includes :
-• Ethereum - Ethereum network acts as the core pillar of the system where all the block
-details are stored in the chain.
-• Solidity- The main language used for making contracts and interacting with the Blockchain
-network.
-• Web3JS- Web3JS is an advanced version of Javascript which plays an essential role in
-carrying out transactions and contract calls.
-• MaterialUI- The entire framework is being integrated with React’s Material UI framework.
-• Truffle Suite- Truffle suite package comes up with tools for implementing and migrating
-contracts as well as setting up a local Blockchain network.
-• Metamask- One common wallet used for making transactions is Metamask where all
-account addresses are registered with their associated public and private keys.
-• Maps API- For better traceability and experience, the system is integrated with a
-google maps api key which tracks the exact location for the product.
+## About
+The project aims to create a decentralized platform for supply chain management using Blockchain technology and smart contracts.The platform enables all supply chain stakeholders to participate and have a clear and immutable record of all transactions, from raw material sourcing to final product delivery. The smart contract’s features include verifying the authenticity of goods, ensuring regulatory compliance, and automating payment processes. The transparency and security of the Blockchain network prevent fraudulent activities such as counterfeiting or data tampering.
+
 
 ## Installation
 To run this project on your local machine, follow these steps:
