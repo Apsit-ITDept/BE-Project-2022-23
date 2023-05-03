@@ -1,0 +1,5 @@
+{
+  "postgresURL": "postgres://postgres:root@localhost:5432/major_project_db",
+  "jwtPrivateKey": "pratikhs",
+  "PORT": "5000"
+}

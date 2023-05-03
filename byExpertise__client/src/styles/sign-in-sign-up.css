@@ -1,0 +1,126 @@
+.container__1 {
+  display: flex;
+  -webkit-display: box;
+  -moz-display: box;
+  -ms-display: flexbox;
+  -webkit-display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 6%;
+  margin: 0;
+}
+.container__1 h2 {
+  font-weight: 700;
+  color: #384047;
+  text-align: center;
+  line-height: 1.5em;
+  margin-bottom: 1.2em;
+  margin-top: 0.2em;
+}
+.form {
+  background-color: #fff;
+  padding: 2em;
+  padding-bottom: 3em;
+  border-radius: 8px;
+  width: 50vw;
+  min-width: 300px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form .form-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.form p {
+  font-size: x-small;
+  color: red;
+  word-break: break-all;
+}
+.checkbox-map-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+span.ks-cboxtags {
+  list-style: none;
+  padding: 10px;
+}
+span.ks-cboxtags span {
+  display: inline;
+}
+span.ks-cboxtags span label {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(139, 139, 139, 0.3);
+  color: #adadad;
+  border-radius: 8px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all 0.2s;
+}
+
+span.ks-cboxtags span label {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+span.ks-cboxtags span label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\f067";
+  transition: transform 0.3s ease-in-out;
+}
+
+span.ks-cboxtags span input[type="checkbox"]:checked + label::before {
+  content: "\f00c";
+  transform: rotate(-360deg);
+  transition: transform 0.3s ease-in-spanout;
+}
+
+span.ks-cboxtags span input[type="checkbox"]:checked + label {
+  border: 2px solid #1bdbf8;
+  background-color: #1c69dd;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+span.ks-cboxtags span input[type="checkbox"] {
+  display: absolute;
+}
+span.ks-cboxtags span input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}
+span.ks-cboxtags span input[type="checkbox"]:focus + label {
+  border: 2px solid #e9a1ff;
+}
+
+.toggle__button__container {
+}
+.toggle__button {
+  margin: 10px 10px 10px 10px;
+}
