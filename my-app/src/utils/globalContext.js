@@ -1,0 +1,6 @@
+const globalContext = () => {
+    return(
+        <>
+        </>
+    );
+}

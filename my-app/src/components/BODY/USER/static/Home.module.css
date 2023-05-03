@@ -1,0 +1,260 @@
+.body {
+  background: #f5f6f7;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  /* justify-content: center; */
+  align-items: center;
+  width: 100%;
+  height: 91.2vh;
+  background-color: #ffffff;
+  overflow-y: auto;
+  /* border: 1px solid black; */
+}
+
+.main::-webkit-scrollbar {
+  width: 12px;
+  height: 16px;
+}
+
+.main::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.display {
+  /* border: 1px solid; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  animation: 2s fadeInDown;
+}
+
+.btn {
+  width: 250px;
+  height: 10vh;
+  animation: 5s fadeInDown;
+  border: 1px solid;
+  border-radius: 20px;
+}
+
+.btn button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: black;
+  color: #ffffff;
+  font-size: medium;
+}
+
+.buttons {
+  margin-top: 7vh;
+  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+/* ProgressBar */
+
+.ProgressCard {
+  width: 50vh;
+  height: 50vh;
+  margin-top: 30px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+  animation: 2s fadeInDown;
+}
+
+@keyframes fadeInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-100px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 
+
+svg {
+  width: 35vh;
+  height: 40vh;
+  animation: 2s fadeInDown;
+}
+
+.circleBackground {
+  fill: none;
+  stroke: #ddd;
+}
+
+.circularProgress {
+  fill: none;
+  /* stroke: #ff1744; */
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: 5s ease;
+}
+
+.circleText {
+  font-size: 2rem;
+  font-weight: bold;
+  transition: 5s ease;
+}
+
+/* Skill Display */
+
+.SkillCard {
+  width: 50vh;
+  height: 50vh;
+  margin-top: 30px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+  animation: 2s fadeInDown;
+}
+
+.SkillCard ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  padding: 1.25rem 1.25rem;
+}
+
+.SkillCard ul::-webkit-scrollbar {
+  width: 7px;
+}
+
+.SkillCard ul::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.SkillCard ul::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.SkillCard ul::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.SkillCard li {
+  width: auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #eaeaea;
+  background-color: gray;
+}
+
+/* .SkillCard li:nth-child(6n) {  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);}
+.SkillCard li:nth-child(6n+1) { background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);}
+.SkillCard li:nth-child(6n+2) { background-image: linear-gradient(to right top, #6bd17d, #88d57a, #a1d979, #b8dc7a, #cddf7e, #d6e27e, #dfe67d, #e9e97d, #eaed76, #ebf26f, #ebf667, #ebfb5f);}
+.SkillCard li:nth-child(6n+3) { background-image: linear-gradient(to right top, #d16b6b, #da6d7b, #e1718c, #e6769f, #e87cb2, #f181af, #f886ac, #ff8ca9, #ff9b8e, #ffb570, #ffd75a, #ebfb5f);}
+.SkillCard li:nth-child(6n+4) { background-image: linear-gradient(to right, #fb5f5f, #f9765c, #f58a5d, #f19d64, #ecae70, #f0a874, #f2a379, #f49e7e, #f3848a, #e370a1, #bf68bc, #7c6bd1);}
+.SkillCard li:nth-child(6n+5) {  background-image: linear-gradient(to right top, #d16b6b, #da6d7b, #e1718c, #e6769f, #e87cb2, #eb7cbc, #ec7cc6, #ed7dd1, #f176d5, #f46fd8, #f867dc, #fb5fe0);} */
+
+.SkillCard li:nth-child(6n) {
+  background-color: rgb(249, 195, 141);
+}
+.SkillCard li:nth-child(6n + 1) {
+  background-color: rgb(173, 255, 173);
+}
+.SkillCard li:nth-child(6n + 2) {
+  background-color: rgb(255, 255, 203);
+}
+.SkillCard li:nth-child(6n + 3) {
+  background-color: rgb(166, 197, 255);
+}
+.SkillCard li:nth-child(6n + 4) {
+  background-color: rgb(244, 197, 242);
+}
+.SkillCard li:nth-child(6n + 5) {
+  background-color: rgb(255, 174, 178);
+}
+/* Skill_List */
+
+
+.allScoreCard{
+  width: 50vh;
+  height: 20vh;
+  margin-top: 30px;
+  border: 1px solid #eaeaea;
+  position: fixed;
+  left: calc(186px);
+  top: calc(65vh);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 10px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+  animation: 2s fadeInDown;
+  gap: 1rem;
+}
+
+.allScoreCardHeader{
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+}
+
+.allScoreCardScores{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  /* border: 1px solid; */
+}

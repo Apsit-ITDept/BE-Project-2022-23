@@ -1,0 +1,35 @@
+.navbar{
+    background: #ff1744 !important;
+    height: 15%;
+    width: 100%;
+    margin: auto;
+    display:flex;
+}
+
+.navtitle{
+    color: #FFFFFF;
+    font-weight:bold;
+    margin-left: 2%;
+    /* margin-top: 1%; */
+    font-size: larger;
+    display:flex;
+    cursor:pointer;
+}
+
+.navbuttons{
+    display: flex;
+    align-items:center;
+    margin-left: 70%;
+    flex-direction: row;
+}
+
+.navbuttons button{
+    color: #FFFFFF;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    margin-right: 30px;
+}
