@@ -154,15 +154,15 @@
 	console.log("qrValue",qrValue)
 	
 	function fetchQR(){
-		console.log("fetchQR called")
-		console.log("src",src)
-		console.log("qrValue",qrValue)
-		qrValue = document.getElementById('productSN').value;
+		
+		qrValue = document.getElementById('SellerCode').value;
 		qrImage = document.querySelector(".qr-code");
 		qrImageResult = qrImage.querySelector("img");
 		src = qrImageResult.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
 		
-		
+		console.log("fetchQR called")
+		console.log("src",src)
+		console.log("qrValue",qrValue)
 		downloadQrImg = document.getElementById('imgQR');
 		downloadQrBtn = document.getElementById('download');
 		downloadQrImg.removeAttribute('hidden');

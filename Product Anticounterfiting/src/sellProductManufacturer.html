@@ -7,6 +7,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/qr_code_box.css">
 
 	</head>
 	<body>
@@ -88,13 +89,22 @@
 				</table>
 			  </div>
 			  <div class="clear">&nbsp;</div>
-
-
-              
-              
-              <button type="submit" class="btn btn-warning btn-register" id="register">Sell to Seller</button>
+              <button type="submit" class="btn btn-warning btn-register" id="register" onclick="fetchQR()">Sell to Seller</button>
           </div>
     </section>
+
+  <!-- <br></br>	 -->
+	<div class="qr-code">
+		<div align="center">
+			<img align="center" hidden id="imgQR" src="" alt="qr-code" >
+		</div>
+		<br></br>
+		<div align="center">
+			<button align="center" hidden type="submit" class="btn btn-warning" id="download" onclick="saveImage()">Download QR Code</button>
+		</div>
+	</div>
+
+<br></br>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="js/popper.js"></script>
@@ -105,6 +115,32 @@
   <script src="js/sellProductManufacturer.js"></script>
   <script src="https://unpkg.com/html5-qrcode"></script>
   <script>
+	var src;
+	var qrValue;
+	function fetchQR(){
+		qrValue = document.getElementById('sellerCode').value;
+		qrValue2 = document.getElementById('productSN').value;
+		qrImage = document.querySelector(".qr-code");
+		qrImageResult = qrImage.querySelector("img");
+		src = qrImageResult.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
+		
+		console.log("fetchQR called")
+		console.log("src",src)
+		console.log("qrValue",qrValue)
+		console.log("qrValue2",qrValue2)
+		downloadQrImg = document.getElementById('imgQR');
+		downloadQrBtn = document.getElementById('download');
+		downloadQrImg.removeAttribute('hidden');
+		downloadQrBtn.removeAttribute('hidden');
+
+	}
+
+	function saveImage(){
+		saveAs(src,qrValue);
+		downloadQrImg.setAttribute('hidden', 'hidden');
+		downloadQrBtn.setAttribute('hidden', 'hidden');
+	}
+
 	var decodedText = "Enter Product SN";
      function docReady(fn) {
         // see if DOM is already available
@@ -139,6 +175,6 @@
             "qr-reader", { fps: 10, qrbox: 250 });
         html5QrcodeScanner.render(onScanSuccess);
     });
-  </script>
+    </script>
   </body>
 </html>

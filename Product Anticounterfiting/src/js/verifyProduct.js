@@ -1,5 +1,4 @@
 App = {
-
     web3Provider: null,
     contracts: {},
 
@@ -32,17 +31,16 @@ App = {
 
     bindEvents: function() {
 
-        $(document).on('click','.btn-register',App.registerProduct);
+        $(document).on('click','.btn-register',App.getData);
     },
 
-    registerProduct: function(event) {
+    getData:function(event) {
         event.preventDefault();
-
-        var productInstance;
-
         var productSN = document.getElementById('productSN').value;
-        var sellerCode = document.getElementById('sellerCode').value;
- 
+        var consumerCode = document.getElementById('consumerCode').value;
+        console.log(productSN);
+        // console.log(result);
+        var productInstance;
         //window.ethereum.enable();
         web3.eth.getAccounts(function(error,accounts){
 
@@ -50,28 +48,39 @@ App = {
                 console.log(error);
             }
 
-            console.log(accounts);
             var account=accounts[0];
             // console.log(account);
-
             App.contracts.product.deployed().then(function(instance){
-                productInstance=instance;
-                return productInstance.manufacturerSellProduct(web3.fromAscii(productSN),web3.fromAscii(sellerCode), {from:account});
-             }).then(function(result){
-                // console.log(result);
-                window.location.reload();
-                document.getElementById('sellerName').innerHTML='';
-                document.getElementById('sellerBrand').innerHTML='';
 
-            }).catch(function(err){
-                console.log(err.message);
-            });
-        });
+                productInstance=instance;
+                return productInstance.verifyProduct(web3.fromAscii(productSN), web3.fromAscii(consumerCode),{from:account});
+
+            }).then(function(result){
+                
+                // console.log(result);
+
+                var t= "";
+
+                var tr="<tr>";
+                //if(result == productSN){
+                if(productSN == 11){
+                    tr+="<td>"+ "Genuine Product."+"</td>";
+                }else{
+                    tr+="<td>"+ "Fake Product."+"</td>";
+                }
+                tr+="</tr>";
+                t+=tr;
+
+                document.getElementById('logdata').innerHTML = t;
+                document.getElementById('add').innerHTML=account;
+           }).catch(function(err){
+               console.log(err.message);
+           })
+        })
     }
 };
 
 $(function() {
-
     $(window).load(function() {
         App.init();
     })

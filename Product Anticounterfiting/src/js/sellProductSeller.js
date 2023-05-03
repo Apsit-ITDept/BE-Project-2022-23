@@ -59,9 +59,9 @@ App = {
                 return productInstance.sellerSellProduct(web3.fromAscii(productSN),web3.fromAscii(consumerCode), {from:account});
              }).then(function(result){
                 // console.log(result);
-                window.location.reload();
-                document.getElementById('sellerName').innerHTML='';
-                document.getElementById('sellerBrand').innerHTML='';
+                //window.location.reload();
+                document.getElementById('sellerName').value='';
+                document.getElementById('sellerBrand').value='';
 
             }).catch(function(err){
                 console.log(err.message);
