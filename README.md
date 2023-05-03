@@ -1,5 +1,4 @@
-# Integrating Recommendation System for Creative
-Learning Web Framework
+# Integrating Recommendation System for Creative Learning Web Framework
 
 
 ## Group Members :-
