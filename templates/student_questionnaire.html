@@ -1,0 +1,220 @@
+{% extends 'student_navbar.html' %}
+
+{% block content %}
+<h2>Feedback</h2>
+
+<hr>
+<form method="post" action="{{url_for('questions', id=id)}}">
+    <fieldset>
+        <label style="width: 1000px;" for="relatable">1. Was the content relatable?</label>
+        <ul class="rate-area">
+            <input type="radio" id="5-star" name="rating" value="5" />
+            <label for="5-star" title="Amazing"></label>
+            <input type="radio" id="4-star" name="rating" value="4" />
+            <label for="4-star" title="Good"></label>
+            <input type="radio" id="3-star" name="rating" value="3" />
+            <label for="3-star" title="Average"></label>
+            <input type="radio" id="2-star" name="rating" value="2" />
+            <label for="2-star" title="Not Good"></label>
+            <input type="radio" id="1-star" name="rating" value="1" />
+            <label for="1-star" title="Bad"></label>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <label style="width: 1000px;" for="useful">2. How useful was the event?</label>
+        <ul class="rate-area">
+            <input type="radio" id="5star" name="rating1" value="5" />
+            <label for="5star" title="Amazing"></label>
+            <input type="radio" id="4star" name="rating1" value="4" />
+            <label for="4star" title="Good"></label>
+            <input type="radio" id="3star" name="rating1" value="3" />
+            <label for="3star" title="Average"></label>
+            <input type="radio" id="2star" name="rating1" value="2" />
+            <label for="2star" title="Not Good"></label>
+            <input type="radio" id="1star" name="rating1" value="1" />
+            <label for="1star" title="Bad"></label>
+        </ul>
+    </fieldset>
+    <fieldset style="width: 1000px;">
+        <label for="helpful">3. How well the Event for this subject are Structured & Organized?</label>
+        <ul class="rate-area">
+            <input type="radio" id="star5" name="rating2" value="5" />
+            <label for="star5" title="Amazing"></label>
+            <input type="radio" id="star4" name="rating2" value="4" />
+            <label for="star4" title="Good"></label>
+            <input type="radio" id="star3" name="rating2" value="3" />
+            <label for="star3" title="Average"></label>
+            <input type="radio" id="star2" name="rating2" value="2" />
+            <label for="star2" title="Not Good"></label>
+            <input type="radio" id="star1" name="rating2" value="1" />
+            <label for="star1" title="Bad"></label>
+        </ul>
+    </fieldset>
+    <fieldset style="width: 1000px;">
+        <label for="overall">4. How much will you rate for this Event?</label>
+        <ul class="rate-area">
+            <input type="radio" id="star-5" name="rating3" value="5" />
+            <label for="star-5" title="Amazing"></label>
+            <input type="radio" id="star-4" name="rating3" value="4" />
+            <label for="star-4" title="Good"></label>
+            <input type="radio" id="star-3" name="rating3" value="3" />
+            <label for="star-3" title="Average"></label>
+            <input type="radio" id="star-2" name="rating3" value="2" />
+            <label for="star-2" title="Not Good"></label>
+            <input type="radio" id="star-1" name="rating3" value="1" />
+            <label for="star-1" title="Bad"></label>
+        </ul>
+    </fieldset>
+    <fieldset style="width: 1000px;">
+        <label for="feedback-comments">5. Comments or Suggestions</label>
+        <textarea id="feedback-comments" name="feedback-comments" placeholder="Enter your feedback here"></textarea>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+<style>
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        /* border: 1px solid #ccc; */
+        border-radius: 10px;
+        background-color: #fff;
+        transition: transform 0.3s ease-in-out;
+        transform: scale(1);
+    }
+
+    /* form:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    } */
+
+    fieldset {
+        overflow: hidden
+    }
+
+    .some-class {
+        float: right;
+        clear: none;
+    }
+
+    input[type="radio"],
+    input.radio {
+        margin: 0 10px;
+        width: 50px;
+        float: right;
+        clear: none;
+    }
+
+    input[type="submit"] {
+        padding: 10px 10px;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #3e8e41;
+    }
+
+    label {
+        font-weight: bold;
+        margin: 10px 0 10px 0;
+        font-size: 18px;
+        color: #333;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 32px;
+        color: #4CAF50;
+        text-align: center;
+    }
+
+    textarea {
+        width: 1000px;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: none;
+        min-height: 150px;
+        max-height: 300px;
+    }
+
+    .rate-area {
+        float: left;
+        border-style: none;
+    }
+
+    .rate-area:not(:checked)>input {
+        position: absolute;
+        top: -9999px;
+        clip: rect(0, 0, 0, 0);
+    }
+
+    .rate-area:not(:checked)>label {
+        float: right;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 180%;
+        color: lightgrey;
+    }
+
+    .rate-area:not(:checked)>label:before {
+        content: "★";
+    }
+
+    .rate-area>input:checked~label {
+        color: gold;
+    }
+
+    .rate-area:not(:checked)>label:hover,
+    .rate-area:not(:checked)>label:hover~label {
+        color: gold;
+    }
+
+    .rate-area>input:checked+label:hover,
+    .rate-area>input:checked+label:hover~label,
+    .rate-area>input:checked~label:hover,
+    .rate-area>input:checked~label:hover~label,
+    .rate-area>label:hover~input:checked~label {
+        color: gold;
+    }
+
+    @media only screen and (max-width: 600px) {
+        form {
+            width: 90%;
+        }
+    }
+
+    /* Changes for horizontal radio buttons */
+    input[type="radio"] {
+        display: none;
+    }
+
+    input[type="radio"]+label {
+        display: inline-block;
+        margin-right: 5px;
+        margin-bottom: 1px;
+        padding: 5px 5px;
+        font-size: 16px;
+        /* color: #333; */
+        /* background-color: #f2f2f2;
+        border-radius: 5px;
+        border: 1px solid #ccc; */
+    }
+</style>
+
+{% endblock %}
