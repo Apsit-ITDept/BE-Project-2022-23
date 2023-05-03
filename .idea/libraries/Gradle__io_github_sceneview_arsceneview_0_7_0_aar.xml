@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.sceneview:arsceneview:0.7.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e7eed8c6e98d4ffbb673f7bebe11e7e1/transformed/arsceneview-0.7.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e7eed8c6e98d4ffbb673f7bebe11e7e1/transformed/arsceneview-0.7.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e7eed8c6e98d4ffbb673f7bebe11e7e1/transformed/arsceneview-0.7.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.sceneview/arsceneview/0.7.0/3b797397e8b18976ede6a668638ff9eed35e6101/arsceneview-0.7.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.sceneview/arsceneview/0.7.0/c27cecdd7add01fe76e21e49f43050bad8be1e87/arsceneview-0.7.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

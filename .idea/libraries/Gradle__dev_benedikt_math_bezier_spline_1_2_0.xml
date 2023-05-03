@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: dev.benedikt.math:bezier-spline:1.2.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.benedikt.math/bezier-spline/1.2.0/47e206f170f7d943ba542562cd11102f63422c9c/bezier-spline-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.benedikt.math/bezier-spline/1.2.0/2f2be88e865bbfe68e7d6c54da4586a828aa691a/bezier-spline-1.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/dev.benedikt.math/bezier-spline/1.2.0/b439912f8977c9b6836513518974aa88591ad30/bezier-spline-1.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

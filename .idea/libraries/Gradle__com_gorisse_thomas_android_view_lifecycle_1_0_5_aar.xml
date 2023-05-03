@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.gorisse.thomas:android-view-lifecycle:1.0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/925921c2413fe9fdf51cd01e98ecfeb8/transformed/android-view-lifecycle-1.0.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/925921c2413fe9fdf51cd01e98ecfeb8/transformed/android-view-lifecycle-1.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/925921c2413fe9fdf51cd01e98ecfeb8/transformed/android-view-lifecycle-1.0.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gorisse.thomas/android-view-lifecycle/1.0.5/89661c4269baed1f1208293b97a2d139c1e85e81/android-view-lifecycle-1.0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gorisse.thomas/android-view-lifecycle/1.0.5/792ee4404d97070a0b0c9d945cb4f26f17e992d5/android-view-lifecycle-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
