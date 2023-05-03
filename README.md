@@ -1,9 +1,9 @@
 # Applying Blockchain to transparent, secure and traceable Supply Chain Management
 
 This project is a collaboration between <br>
-Yugandhar Ghatge(19104046) <br>
-Mayuri Patil(19104012) <br>
-Abhijeetkumar Mishra(19104019) <br>
+Yugandhar Ghatge <br>
+Mayuri Patil <br>
+Abhijeetkumar Mishra <br>
 
 
 ## About
