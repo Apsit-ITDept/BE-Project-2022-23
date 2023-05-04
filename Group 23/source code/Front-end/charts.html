@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container" style="width: 30%;">
+    <canvas id="myChart"></canvas>
+  </div>
+
+  <div class="container" style="width: 50%;">
+    <canvas id="chart1"></canvas>
+  </div>
+
+  <div class="container" style="width: 50%;">
+    <canvas id="chart2"></canvas>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+  const ctx = document.getElementById('myChart');
+  const ctx1 = document.getElementById('chart1');
+  const ctx2 = document.getElementById('chart2');
+  const seektime = [
+    {x: 5, y: 10}, {x: 8, y: 18},{x: 16, y: 14}, {x: 26, y: 20},
+    {x: 27, y: 25}, {x: 30, y: 30},{x: 32, y: 21}, {x: 35, y: 15},
+    {x: 40, y: 24}, {x: 48, y: 30},{x: 55, y: 36}, {x: 62, y: 44},
+    {x: 72, y: 50}, {x: 76, y: 46},{x: 80, y: 42}, {x: 82, y: 50},
+    {x: 86, y: 56}, {x: 93, y: 60},{x: 102, y: 68}, {x: 113, y: 70},
+    {x: 115, y: 67}, {x: 118, y: 62},{x: 120, y: 55}, {x: 123, y: 50},
+    {x: 124, y:53}, {x: 129, y: 46},{x: 132, y:42}, {x: 135, y: 45},
+    {x: 140, y:54}, {x: 146, y: 59},{x: 153, y:52}, {x: 159, y: 59},
+    {x: 163, y:70}, {x: 170, y: 95},{x: 173, y:115}, {x: 180, y:144}
+  ]
+  const pauseX = [
+    {x: 5, y: 115}, {x: 8, y: 138},{x: 16, y: 150}, {x: 26, y: 180},
+    {x: 27, y: 200}, {x: 30, y: 233},{x: 32, y: 254}, {x: 35, y: 263},
+    {x: 40, y: 276}, {x: 48, y: 283},{x: 55, y: 300}, {x: 62, y: 284},
+    {x: 72, y: 262}, {x: 76, y: 251},{x: 80, y: 233}, {x: 82, y: 233},
+    {x: 86, y: 220}, {x: 93, y: 200},{x: 102, y: 215}, {x: 113, y: 246},
+    {x: 115, y: 282}, {x: 118, y: 305},{x: 120, y: 325}, {x: 123, y: 350},
+    {x: 124, y:364}, {x: 129, y: 370},{x: 132, y:362}, {x: 135, y: 335},
+    {x: 140, y:320}, {x: 146, y: 308},{x: 153, y:292}, {x: 159, y: 285},
+    {x: 163, y:253}, {x: 170, y: 234},{x: 173, y:205}, {x: 180, y:184}     
+  ];
+
+  const pieX = ["0 to 25", "25 to 50", "50 to 75", "75 to 100"];
+  const pieY = [255, 130, 90, 300];
+  const pieColors = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+  ];
+
+  const donutX = ["Introduction/Prerequisites", "Module 1", "Module 2", "Module 3", "Module 4", "Module 5", "Module 6"];
+  const donutY = [255, 360, 100, 80, 40, 20, 15];
+  const donutColor = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+    "#1e7145",
+    "#e7bd01",
+    "#873B80",
+  ];
+
+  new Chart(ctx, {
+    type: "doughnut",
+    data: {
+      labels: donutX,
+      datasets: [{
+        backgroundColor: donutColor,
+        data: donutY
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "Module popularity based on first completion."
+      }
+    }
+  });
+
+  new Chart(ctx1, {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: pauseX
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 40, max:160}}],
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+
+  new Chart(ctx2, {
+    type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: seektime
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 40, max:160}}],
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+  });
+
+
+  function labelGenerator(start, end, step) {
+    const arr = []
+    for(i = start; i <= end; i += step){
+      arr.push(i);
+    }
+    return arr;
+  }
+
+  function labelGeneratorForTime(start, end, step) {
+    const arr = []
+    for(i = start; i <= end; i += step){
+      let str = '';
+      let min = Math.floor(i / 60);
+      let sec = i - min * 60;
+      arr.push(`${min}:${sec}`);
+    }
+    return arr;
+  }
+</script>
+
+</body>
+</html>

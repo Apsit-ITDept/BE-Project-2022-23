@@ -1,0 +1,8 @@
+openapi: 3.0.0
+info:
+  title: Login-Register API
+  contact: {}
+  version: "1.0"
+servers:
+  - url: https://localhost:5000
+    name: "HTTPS"
