@@ -1,0 +1,159 @@
+body {
+  background: #ffffff;
+}
+
+.navbar {
+  background: black;
+  height: 60px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navtitle {
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 2%;
+  /* margin-top: 1%;  */
+  font-size: larger;
+  display: flex;
+  cursor: pointer;
+  margin-right: 10%;
+}
+
+.profileBtn {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  justify-content: center;
+  padding: 5px 0px 5px 0px;
+  /* margin-top: 15px; */
+}
+.profileBtn button {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 0px 4px 0px;
+  border-radius: 20px;
+  color: black;
+  font-size: 15px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.profileBtn button:hover {
+  width: 100%;
+  height: 40px;
+  background: #894242;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.profileBtn img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.profileIcon {
+  width: 20%;
+  height: 100%;
+  border-radius: 50%;
+  margin-right: -15%;
+  margin-left: 20%;
+}
+
+.navItems {
+  display: flex;
+  height: inherit;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin: 0;
+}
+
+.navItems li {
+  display: grid;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  color: rgba(255, 255, 255, 0.984);
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+}
+
+.navbar li:hover {
+  color: #ffc6c6;
+}
+
+.active {
+  font-weight: 600 !important;
+  color: rgb(255, 255, 255) !important;
+  border-bottom-color: white;
+  border-bottom: 4px solid white !important;
+}
+
+.logBtn {
+  display: flex;
+  align-items: center;
+  color: black;
+  border-radius: 4px;
+  width: 150px;
+  height: 40px;
+  justify-content: center;
+  /* margin-top: 15px; */
+  margin-left: 25px;
+  background: #fff;
+}
+
+.logBtn button {
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  background: #fff;
+  padding: 10px 22px;
+  color: black;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.logBtn button:hover {
+  transition: all 0.2s ease-in-out;
+  background: #894242;
+  color: white;
+}
+
+.landingPageBtn {
+  display: flex;
+  flex-direction: row;
+  flex: 0.5;
+  height: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  margin-left: 10%;
+}
+
+.profileLogBtn {
+  display: flex;
+  height: inherit;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  margin-right: 30px;
+}

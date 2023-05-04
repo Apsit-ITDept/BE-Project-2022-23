@@ -1,0 +1,168 @@
+::placeholder {
+  opacity: 80%;
+}
+
+.center {
+  background: black;
+  width: 50%;
+  height: 67vh;
+  display: flex;
+  border-radius: 20px;
+  margin-top: 3%;
+  border-color: black;
+  margin-left: 20%;
+}
+
+.center1 {
+  width: 50%;
+  margin-top: 1vh;
+  margin-left: 1%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  vertical-align: top;
+  background: white;
+  border-color: black;
+  align-items: center;
+}
+
+.cardHeader {
+  margin-top: 20px;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  flex: 0.8;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #575757;
+}
+
+.radioContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+}
+
+.radioBtnContainer {
+  width: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.inputContainer {
+  width: 110%;
+  height: 31vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  /* border: 1px solid; */
+}
+
+.inputContainer::-webkit-scrollbar {
+  width: 7px;
+  height: 16px;
+}
+
+.inputContainer::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inputContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.inputContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.inputField {
+  box-sizing: border-box;
+}
+
+.inputField input,
+button {
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  height: 35px;
+}
+
+.inputField input {
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #575757;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #57575744;
+}
+
+.inputField input:focus-visible {
+  outline: 0px !important;
+}
+
+.inputField button {
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.center1 .loginLink {
+  margin-top: 10px;
+  color: #575757;
+  text-align: center;
+  font-size: smaller;
+}
+
+.loginLink a {
+  color: cornflowerblue;
+}
+
+.center1 .fp {
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: small;
+  margin-top: -10px;
+}
+
+.fp a {
+  color: cornflowerblue;
+}
+
+.signupLink {
+  text-align: center;
+  color: #575757;
+  font-size: smaller;
+}
+
+.signupLink a {
+  color: cornflowerblue;
+}
+
+@media screen and (max-width: 800px) {
+  .center {
+    margin-top: 12%;
+    margin-left: 25%;
+    width: 50%;
+  }
+  .center1 {
+    width: 98%;
+  }
+  .center2 {
+    display: none;
+  }
+}

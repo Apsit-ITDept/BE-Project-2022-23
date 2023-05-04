@@ -1,0 +1,86 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  height: 92vh;
+  background-color: transparent;
+  /* border: 1px solid red; */
+  justify-content: center;
+  align-items: center;
+  /* gap: 1rem; */
+}
+
+.cardList {
+  padding: 2%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* border: 1px solid; */
+  overflow-y: scroll;
+  gap: 1rem;
+}
+
+.cardList::-webkit-scrollbar {
+  width: 12px;
+  height: 16px;
+}
+
+.cardList::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cardList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.cardList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+/* History Card Styles  */
+.HistoryCard {
+  /* padding: 1rem; */
+  width: 600px;
+  height: 250px;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,.2);
+  padding: 1.25rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  /* margin-bottom: 50px; */
+  /* margin-left: 20%;
+  margin-top: 10%; */
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* margin-top: 2%; */
+  /* border: 1px solid; */
+  padding: 1rem;
+}
+
+.itemTitle {
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  gap: 1rem;
+  /* border: 1px solid; */
+}

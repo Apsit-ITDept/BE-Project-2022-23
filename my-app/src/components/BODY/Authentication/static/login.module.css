@@ -1,0 +1,170 @@
+body {
+  background: #ffffff;
+  font-family: sans-serif;
+}
+
+.center {
+  background: black;
+  width: 50%;
+  height: 67vh;
+  display: flex;
+  border-radius: 20px;
+  margin-top: 3%;
+  border-color: black;
+  margin-left: 20%;
+}
+
+.center1 {
+  width: 50%;
+  margin-top: 1vh;
+  margin-left: 1%;
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  vertical-align: top;
+  background: white;
+  border-color: black;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  text-align: center;
+  color: #575757;
+}
+
+.cardHeader {
+  margin-top: 20px;
+  /* border: 1px solid; */
+  display: flex;
+  flex-direction: column;
+  flex: 0.5;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.radioContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+}
+
+.radioBtnContainer {
+  width: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.inputField {
+  box-sizing: border-box;
+}
+
+.inputField input,
+button {
+  width: 100%;
+  border: 0;
+  box-sizing: border-box;
+  height: 35px;
+}
+
+.inputField input {
+  margin-bottom: 20px;
+  background-color: transparent;
+  color: #575757;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #57575744;
+}
+
+.inputField input:focus-visible {
+  outline: 0px !important;
+}
+
+.inputField button {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.center1 .fp {
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: small;
+  /* margin-top: -10px; */
+}
+
+.fp a {
+  color: cornflowerblue;
+}
+
+.signupLink {
+  text-align: center;
+  color: #575757;
+  font-size: smaller;
+}
+
+.signupLink a {
+  color: cornflowerblue;
+}
+
+@media screen and (max-width: 800px) {
+  .center {
+    margin-top: 12%;
+    margin-left: 25%;
+    width: 50%;
+  }
+  .center1 {
+    width: 98%;
+  }
+  .center2 {
+    display: none;
+  }
+}
+
+/* ******************************************************************************************************** */
+/* Navbar styles */
+/* ******************************************************************************************************** */
+
+.navbar {
+  background: black;
+  height: 15%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+}
+
+.navtitle {
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 2%;
+  /* margin-top: 1%; */
+  font-size: larger;
+  display: flex;
+  cursor: pointer;
+}
+
+.navbuttons {
+  display: flex;
+  align-items: center;
+  margin-left: 70%;
+  flex-direction: row;
+}
+
+.navbuttons button {
+  color: #ffffff;
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 30px;
+}

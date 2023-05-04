@@ -1,0 +1,108 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+  height: 88vh;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 50%;
+  height: 90%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0.5rem 1.2rem rgba(0, 0, 0, 0.2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+  /* border: 1px solid black; */
+}
+
+.titleInputField {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  /* border: 1px solid black; */
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.titleInputField input {
+  width: 100%;
+  height: 100%;
+}
+
+.titleInputField input ::after {
+  border-color: black;
+}
+
+.detailsField {
+  margin-top: 30px;
+  width: 100%;
+  /* border: 1px solid; */
+  height: 30%;
+}
+
+.detailsField textarea {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  padding: 1rem;
+  border-color: #cccccc;
+  /* word-spacing: 1rem; */
+  /* border: 0px; */
+}
+.detailsField textarea:focus {
+  outline: none !important;
+  /* border: 1px solid black; */
+ border-color: #ff1477;
+}
+
+.optionMenu {
+  margin-top: 30px;
+  /* border: 1px solid; */
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+.jobPost {
+  width: 100%;
+  height: 10%;
+  margin-top: 20px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.jobPost button {
+  width: 150px;
+  height: 49px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.internalContainer{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 1rem;
+}
+
+.inputDateTime{
+    width: 71.4%;
+}

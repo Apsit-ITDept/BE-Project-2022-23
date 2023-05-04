@@ -1,0 +1,160 @@
+/**********************************************************************************/
+/* AvailableJobs body */
+/**********************************************************************************/
+
+.main {
+  width: 100%;
+  height: 92vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  /* border: 1px solid; */
+  /* justify-content: space-between; */
+}
+
+.search {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  width: 500px;
+  height: 40px;
+  align-items: center;
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.search input {
+  width: 450px;
+  height: 40px;
+  background: #f5f6f7;
+  border: none;
+}
+
+.search input:focus {
+  border: none;
+}
+
+.search input:hover {
+  border: none;
+}
+
+.search button {
+  background: #f5f6f7;
+  width: 50px;
+  height: 40px;
+  border: none;
+}
+
+.search button:hover {
+  background: #bbb;
+}
+
+.container {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* overflow-y: scroll; */
+}
+
+.container ul {
+  /* margin-top: 3rem; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 30px;
+  overflow-y: scroll;
+  /* border: 1px solid red; */
+}
+
+.container ::-webkit-scrollbar {
+  width: 12px;
+  height: 16px;
+}
+
+.container ::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.container ::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.container ::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+.container li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.separator {
+  /* margin-top: 2%; */
+  /* margin-left: 8%; */
+  width: 85%;
+  height: 0%;
+  border-bottom: 1px solid #444444;
+  opacity: 20%;
+
+  box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,.2);
+  padding: 0.5rem 0.5rem;
+}
+
+/**********************************************************************************/
+/* AvailableJobs body */
+/**********************************************************************************/
+
+.cardContainer {
+  width: 85%;
+  height: 30vh;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 0.5rem 1.2rem rgba(0,0,0,.2);
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  /* margin-left: 10%; */
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+  margin-top: 2%;
+}
+
+.items p {
+  margin-top: 0.3px;
+  width: 70%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.applyBtn {
+  color: white;
+  background-color: black;
+}
