@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rom.kidsgame.kidslearninggame">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".maths_quiz"
+            android:exported="false" />
+        <activity
+            android:name=".maths_quiz_result"
+            android:exported="false" />
+        <activity
+            android:name=".maths_quiz_congo"
+            android:exported="false" />
+        <activity
+            android:name=".math_info"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".tryagainpopup"
+            android:exported="false" />
+        <activity
+            android:name=".congalpha"
+            android:exported="false" />
+        <activity
+            android:name=".popup_info_alphabet"
+            android:exported="false" />
+        <activity
+            android:name=".AlphabetTraining"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9731420309932281~5955996158" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FruitsActivity" />
+        <activity android:name=".AlphabetActivity" />
+        <activity android:name=".NumberActivity" />
+        <activity android:name=".KnowledgeActivity" />
+        <activity android:name=".DrawingActivity" />
+        <activity android:name=".activity.SettingsActivity" />
+
+        <service
+            android:name=".util.BackgroundSoundService"
+            android:enabled="true" />
+    </application>
+
+</manifest>
